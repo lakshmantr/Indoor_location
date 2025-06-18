@@ -15,8 +15,8 @@ def hello():
     if i>=3:
        return
     else:  
-         coordinate_index=i
-         response=requests.get(f"http://127.0.0.1:5000/launch?coordinates_index={coordinate_index}")
+         employee_id=1
+         response=requests.get(f"http://127.0.0.1:5000/launch?employee_id={employee_id}")
          data=response.json()
          x=int(data["x coordinates"])
          y=int(data["y coordinates"])       
